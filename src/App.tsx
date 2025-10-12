@@ -14,7 +14,6 @@ const App = () => {
         Typing Speed Test
       </h1>
       
-      {/* <BackgroundRippleEffect rows={12} cols={27} cellSize={56} /> */}
       <Timer timeLeft={timeLeft} />
       <div className="relative max-w-2xl mt-3 text-3xl leading-relaxed break-all">
         <UserTyping words={words} userInput={typed} />
