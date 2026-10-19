@@ -1,8 +1,8 @@
-# 🔍 TypeCheck
+# 🔍 TypeFlow
 
 ### TypeScript Analysis & Validation Platform
 
-TypeCheck is a developer-focused tool designed to improve TypeScript code quality by identifying type-related issues, validating code structure, and providing actionable insights. The platform helps developers write safer, more maintainable code through automated analysis and intelligent feedback.
+TypeFlow is a developer-focused tool designed to improve TypeScript code quality by identifying type-related issues, validating code structure, and providing actionable insights. The platform helps developers write safer, more maintainable code through automated analysis and intelligent feedback.
 
 ---
 
@@ -65,7 +65,7 @@ TypeCheck is a developer-focused tool designed to improve TypeScript code qualit
 ## 📂 Project Structure
 
 ```bash
-typecheck/
+TypeFlow/
 ├── frontend/
 ├── backend/
 ├── components/
@@ -81,7 +81,7 @@ typecheck/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/typecheck.git
+git clone https://github.com/yourusername/TypeFlow.git
 ```
 
 ### Install Dependencies
@@ -126,6 +126,6 @@ Building tools that improve developer productivity and code quality.
 
 ---
 
-### TypeCheck
+### TypeFlow
 
 *Write safer TypeScript. Build with confidence.*
