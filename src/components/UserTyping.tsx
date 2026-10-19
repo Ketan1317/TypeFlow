@@ -1,52 +1,39 @@
+
 import Caret from "./Caret";
-import cn from "classnames";
 
 type UserTypingType = {
-  userInput: string; // what the user has typed so far
-  words: string;     // the target words to type
-};
-
-//each individual character 
-type CharacterType = {
-  actual: string;   // character typed by the user
-  expected: string; // the correct character from the words string
+  userInput: string;
+  words: string;
 };
 
 const UserTyping = ({ userInput, words }: UserTypingType) => {
-  // Split user input into characters for cmparison
-  const typedCharacter = userInput.split("");
-
   return (
-    <div className="absolute inset-0 text-left text-3xl">
-      {typedCharacter.map((char: string, idx: number) => {
+    <div
+      className="whitespace-pre-wrap break-words"
+      aria-label="Text to type"
+    >
+      {words.split("").map((expected, idx) => {
+        const isTyped = idx < userInput.length;
+        const isCorrect = userInput[idx] === expected;
+
+        let characterClass = "text-slate-500";
+
+        if (isTyped) {
+          characterClass = isCorrect
+            ? "text-yellow-300"
+            : "rounded-sm bg-red-500/15 text-red-400 underline decoration-red-400/70 underline-offset-4";
+        }
+
         return (
-          <Character
-            key={idx}
-            actual={char}       
-            expected={words[idx]} 
-          />
+          <span key={idx} className={characterClass}>
+            {idx === userInput.length && <Caret />}
+            {expected}
+          </span>
         );
       })}
 
-      <Caret />
+      {userInput.length >= words.length && <Caret />}
     </div>
-  );
-};
-
-const Character = ({ actual, expected }: CharacterType) => {
-  const isCorrect = actual === expected;
-  const isWhitespace = expected === " ";
-
-  return (
-    <span
-      className={cn({
-        "text-red-500 bg-rose-500/20 rounded-sm": !isCorrect && !isWhitespace,       // wrong character
-        "text-yellow-400": isCorrect && !isWhitespace,     // correct character
-        "bg-red-500": !isCorrect && isWhitespace,       // wrong space
-      })}
-    >
-      {expected}
-    </span>
   );
 };
 

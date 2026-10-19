@@ -1,15 +1,18 @@
-// components/Caret.tsx
+
 import { motion } from "framer-motion";
 
 const Caret = () => {
   return (
-    <motion.div
-      aria-hidden={true}
-      className="inline-flex bg-yellow-400 w-0.5 h-7"
+    <motion.span
+      aria-hidden="true"
+      className="mx-[1px] inline-block h-[1.25em] w-[2px] translate-y-[0.2em] rounded-full bg-yellow-400 align-baseline"
       initial={{ opacity: 1 }}
-      animate={{ opacity: 0 }}
-      exit={{ opacity: 1 }}
-      transition={{ repeat: Infinity, duration: 0.8, ease: "easeInOut" }}
+      animate={{ opacity: [1, 0.25, 1] }}
+      transition={{
+        duration: 1,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
     />
   );
 };
