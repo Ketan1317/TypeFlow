@@ -1,131 +1,20 @@
-# 🔍 TypeFlow
+# TypeFlow — Typing Speed Test
 
-### TypeScript Analysis & Validation Platform
+**TypeFlow** is a modern, interactive typing speed test application designed to help users improve their typing speed, accuracy, and overall efficiency. With a clean, elegant interface and real-time typing feedback, TypeFlow provides an engaging environment for practicing typing and tracking performance.
 
-TypeFlow is a developer-focused tool designed to improve TypeScript code quality by identifying type-related issues, validating code structure, and providing actionable insights. The platform helps developers write safer, more maintainable code through automated analysis and intelligent feedback.
+### Key Features
+- **Real-Time Typing Feedback:** Instantly highlights correct and incorrect characters as users type.
+- **Countdown Timer:** A 30-second typing challenge that encourages users to improve their speed.
+- **Performance Analytics:** Displays Words Per Minute (WPM), typing accuracy, total characters typed, and errors.
+- **Interactive User Interface:** Features smooth animations, responsive layouts, and a modern dark theme with vibrant yellow accents.
+- **Instant Restart:** Allows users to restart the test and practice multiple times with ease.
 
----
+### Tech Stack
+- React and TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- Vite
 
-## ✨ Features
-
-### 📝 Type Validation
-
-* Detect type mismatches
-* Validate TypeScript definitions
-* Improve type safety across projects
-
-### ⚡ Code Analysis
-
-* Analyze project structure
-* Identify potential code issues
-* Generate actionable recommendations
-
-### 📊 Developer Insights
-
-* Project statistics
-* Code quality metrics
-* Type coverage analysis
-
-### 🎨 Modern UI
-
-* Clean dashboard interface
-* Responsive design
-* Fast and intuitive user experience
-
-### 🚀 Performance Optimized
-
-* Efficient code processing
-* Real-time analysis
-* Lightweight architecture
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-
-* React.js
-* TypeScript
-* Tailwind CSS
-* Vite
-
-### Backend
-
-* Node.js
-* Express.js
-
-### Tools
-
-* TypeScript Compiler API
-* ESLint
-* Prettier
-
----
-
-## 📂 Project Structure
-
-```bash
-TypeFlow/
-├── frontend/
-├── backend/
-├── components/
-├── services/
-├── utils/
-└── types/
-```
-
----
-
-## 🚀 Getting Started
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/TypeFlow.git
-```
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Start Development Server
-
-```bash
-npm run dev
-```
-
----
-
-## 🎯 Key Highlights
-
-* TypeScript Code Analysis
-* Type Validation Engine
-* Developer Productivity Tools
-* Modern React Architecture
-* Scalable Design
-
----
-
-## 🔮 Future Enhancements
-
-* AI-Powered Code Suggestions
-* Automated Refactoring
-* VS Code Extension
-* Team Collaboration Features
-* CI/CD Integration
-
----
-
-## 👨‍💻 Author
-
-**Ketan Goyal**
-
-Building tools that improve developer productivity and code quality.
-
----
-
-### TypeFlow
-
-*Write safer TypeScript. Build with confidence.*
+### Objective
+The primary goal of TypeFlow is to provide a simple yet engaging platform for developing faster, more accurate typing skills through focused practice and immediate performance feedback.
